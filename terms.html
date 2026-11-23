@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mote 利用規約</title>
+<!-- Mote 的使用条款。日语版为正本，其他语言是参考译文。
+     这个文件同时用在两处：公开网址（App Store Connect 要填）和 App 里（各安装脚本把它复制到 ios/Mote/，设置和登录页里打开）。
+     内容改了要同时改四种语言，并在 src/app/hud/legal.js 里把 LEGAL_VER 改成新的日期，已登录的人会被请求重新同意。 -->
+<style>
+:root{color-scheme:light dark;--bg:#f5f6f8;--ink:#1d2129;--ink2:#5b6370;--line:rgba(0,0,0,.09);--chip:rgba(112,120,132,.12);--accent:#1d9e75}
+@media (prefers-color-scheme:dark){:root:not(.light){--bg:#121417;--ink:#eceff3;--ink2:#9aa3ae;--line:rgba(255,255,255,.12);--chip:rgba(255,255,255,.1);--accent:#5dcaa5}}
+:root.dark{--bg:#121417;--ink:#eceff3;--ink2:#9aa3ae;--line:rgba(255,255,255,.12);--chip:rgba(255,255,255,.1);--accent:#5dcaa5;color-scheme:dark}
+:root.light{color-scheme:light}
+:root.embed{--bg:#f5f6f8}
+:root.embed.dark{--bg:#1d2025}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","PingFang SC","Apple SD Gothic Neo",system-ui,sans-serif;-webkit-text-size-adjust:100%}
+.bar{position:sticky;top:0;z-index:1;display:flex;justify-content:center;gap:4px;padding:10px 12px;background:color-mix(in srgb,var(--bg) 82%,transparent);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}
+.bar button{border:0;padding:5px 12px;border-radius:10px;background:none;color:var(--ink2);font:inherit;font-size:13px}
+.bar button.on{background:var(--chip);color:var(--ink);font-weight:650}
+main{max-width:680px;margin:0 auto;padding:6px 22px calc(56px + env(safe-area-inset-bottom))}
+article[hidden]{display:none}
+h1{margin:16px 0 2px;font-size:26px;line-height:1.25;letter-spacing:-.02em}
+.date{margin:0 0 18px;color:var(--ink2);font-size:13px}
+h2{margin:30px 0 6px;font-size:17px;line-height:1.4;letter-spacing:-.01em}
+p{margin:6px 0}
+ul,ol{margin:6px 0;padding-left:1.3em}
+li{margin:4px 0}
+b{font-weight:650}
+.svc{margin:10px 0;padding:10px 0 2px;border-top:.5px solid var(--line)}
+.svc p{margin:2px 0 6px;color:var(--ink2)}
+a{color:var(--accent)}
+.note{margin-top:30px;padding-top:12px;border-top:.5px solid var(--line);color:var(--ink2);font-size:13px}
+</style>
+</head>
+<body>
+<nav class="bar" id="bar"><button data-l="ja">日本語</button><button data-l="zh">中文</button><button data-l="en">English</button><button data-l="ko">한국어</button></nav>
+<main>
+
+<!-- ======================= 日本語（正本） ======================= -->
+<article lang="ja">
+<h1>利用規約</h1>
+<p class="date">改定日：2026年11月24日（制定日：2026年11月19日）</p>
+<p>この利用規約（以下「本規約」）は、Mote運営（以下「運営者」）が提供するチャットアプリ「Mote」（以下「本アプリ」）の利用条件を定めるものです。本アプリを使うには、本規約と<a data-doc="privacy" href="privacy.html">プライバシーポリシー</a>に同意していただく必要があります。</p>
+
+<h2>第1条（適用）</h2>
+<ol>
+<li>本規約は、本アプリを使うすべての方（以下「利用者」）に適用されます。</li>
+<li>本アプリの中で示すお知らせやルールも、本規約の一部です。</li>
+</ol>
+
+<h2>第2条（アカウント）</h2>
+<ol>
+<li>アカウントは、正確な情報で登録してください。</li>
+<li>アカウントは本人だけが使えます。他人に譲ったり貸したりすることはできません。</li>
+<li>パスワードなどは、利用者の責任で管理してください。</li>
+<li>未成年の方は、保護者の同意を得たうえで利用してください。</li>
+</ol>
+
+<h2>第3条（禁止事項）</h2>
+<p>運営者は、不快なコンテンツや迷惑行為を一切容認しません。利用者は、次のことをしてはいけません。</p>
+<ol>
+<li>法令や公序良俗に反すること、犯罪につながること</li>
+<li>他人へのいやがらせ、脅迫、差別、いじめ、つきまとい</li>
+<li>わいせつな内容、暴力的・残虐な内容、児童を性的に扱う内容を送ったり投稿したりすること</li>
+<li>他人の著作権、肖像権、プライバシーなどの権利を侵害すること</li>
+<li>他人へのなりすまし、うその情報の登録</li>
+<li>スパム、無差別な勧誘、出会いを目的とした勧誘、宗教やマルチ商法などへの勧誘</li>
+<li>他人の個人情報を、本人の同意なく公開すること</li>
+<li>通話やリビングでの相手の声・映像、ストーリーなどを、相手の同意なく録音・録画・保存したり、公開したりすること</li>
+<li>迷惑な発信をくり返すこと、リビングを荒らしたり、ほかの参加者にいやがらせをしたりすること</li>
+<li>不正アクセス、本アプリやサーバーへの攻撃、リバースエンジニアリング、自動化ツールによる大量の操作</li>
+<li>本アプリの不具合を悪用すること</li>
+<li>その他、運営者が不適切と判断すること</li>
+</ol>
+
+<h2>第4条（通報・ブロックと対応）</h2>
+<ol>
+<li>利用者は、問題のあるユーザーや投稿を、本アプリの中で通報したりブロックしたりできます。</li>
+<li>運営者は、通報された内容を確認し、24時間以内を目安に、投稿の削除や利用の停止などの対応をします。</li>
+<li>運営者は、本規約に違反したと判断した場合、事前に知らせることなく、投稿の削除、アカウントの一時停止や削除を行うことがあります。</li>
+</ol>
+
+<h2>第5条（コンテンツの権利）</h2>
+<ol>
+<li>利用者が送ったり投稿したりした内容の権利は、その利用者にあります。</li>
+<li>運営者は、本アプリの提供に必要な範囲（保存、相手への表示、翻訳、画像の縮小、通話の中継など）で、その内容を無償で使うことができます。</li>
+<li>本アプリのデザインやプログラムなどの権利は、運営者または正当な権利者にあります。</li>
+</ol>
+
+<h2>第6条（AI の機能）</h2>
+<ol>
+<li>翻訳と AI アシスタントの内容は AI が自動で作るもので、正確でないことがあります。大切なことは、ご自身で確かめてください。</li>
+<li>AI アシスタントが提案するメッセージの送信やリマインダーの設定は、利用者が確認のボタンを押したときだけ実行されます。</li>
+</ol>
+
+<h2>第7条（通話・リビング・ストーリー）</h2>
+<ol>
+<li>通話とリビングの音声・映像は、相手にその場で届けるためだけに使います。運営者は録音・録画をしません。</li>
+<li>ほかの人の声や映像を録音・録画したり、公開したりするときは、必ず前もってその人の同意を得てください。</li>
+<li>リビングを開いた人は、話せる人を決めたり、参加者のマイクをオフにしたり、メッセージを止めたり、参加者を退出させたりできます。これらの機能は、リビングをみんなが気持ちよく使えるようにするために使ってください。</li>
+<li>ストーリーは、投稿から24時間たつとほかの人からは見えなくなります。ただし、見た人がスクリーンショットなどで残すことを完全に防ぐことはできません。見られる人の設定を確かめてから投稿してください。</li>
+<li>本アプリの通話では、110番や119番などの緊急通報はできません。</li>
+</ol>
+
+<h2>第8条（Mote+）</h2>
+<ol>
+<li>Mote+ は、Apple の App 内課金による自動更新の定期購読です。料金と期間は購入画面に表示します。</li>
+<li>購読は、期間が終わる24時間前までに解約しない限り、自動で更新されます。解約は、iPhone の「設定」› 自分の名前 ›「サブスクリプション」からできます。</li>
+<li>支払いと返金は Apple の規約に従います。運営者は返金の手続きをすることができません。</li>
+<li>ベータ版の期間中は、運営者の判断で、Mote+ を無料で提供することがあります。無料の提供は、運営者が定める時期に終わります。</li>
+<li>本アプリの使用許諾には、本規約のほか、Apple の<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">標準使用許諾契約（EULA）</a>が適用されます。</li>
+</ol>
+
+<h2>第9条（変更・中断・終了）</h2>
+<ol>
+<li>運営者は、本アプリの内容を変えたり、提供を中断・終了したりすることがあります。終了する場合は、できるだけ前もって本アプリでお知らせします。</li>
+<li>本アプリは現在ベータ版です。機能やデザインが予告なく変わることがあります。</li>
+</ol>
+
+<h2>第10条（退会）</h2>
+<p>利用者は、「設定」からいつでもアカウントを削除できます。削除したあとの情報の扱いは、プライバシーポリシーのとおりです。</p>
+
+<h2>第11条（免責）</h2>
+<ol>
+<li>運営者は、本アプリに不具合がないこと、通話や通知がいつも届くこと、利用者の特定の目的に合うことを保証しません。</li>
+<li>運営者は、本アプリの利用で利用者に生じた損害について、運営者に故意または重大な過失がある場合を除き、直接かつ通常の損害に限り、その損害が生じた月に利用者が Mote+ に支払った金額を上限として責任を負います。</li>
+<li>利用者どうしのトラブルは、当事者の間で解決してください。ただし、運営者は第4条の通報には対応します。</li>
+</ol>
+
+<h2>第12条（本規約の変更）</h2>
+<p>運営者は、民法の定型約款の定めに従い、本規約を変更することがあります。変更する場合は、変更後の内容と効力が生じる日を、その日より前に本アプリでお知らせします。大切な変更の場合は、改めて同意をお願いします。</p>
+
+<h2>第13条（準拠法・管轄）</h2>
+<p>本規約は日本法に従って解釈します。本アプリに関する紛争は、東京地方裁判所を第一審の専属的合意管轄裁判所とします。</p>
+
+<h2>第14条（お問い合わせ）</h2>
+<p><a href="mailto:hakuku_@outlook.com">hakuku_@outlook.com</a></p>
+
+<p class="note">本規約は日本語版を正式なものとします。他の言語版は参考のための翻訳です。</p>
+</article>
+
+<!-- ======================= 中文 ======================= -->
+<article lang="zh-Hans" data-l="zh" hidden>
+<h1>使用条款</h1>
+<p class="date">修订日期：2026 年 11 月 24 日（制定日期：2026 年 11 月 19 日）</p>
+<p>本使用条款（以下称「本条款」）规定了 Mote 运营（以下称「运营者」）提供的聊天 App「Mote」（以下称「本 App」）的使用条件。使用本 App，需要同意本条款和<a data-doc="privacy" href="privacy.html">隐私政策</a>。</p>
+
+<h2>第 1 条（适用范围）</h2>
+<ol>
+<li>本条款适用于所有使用本 App 的人（以下称「用户」）。</li>
+<li>本 App 内公布的通知和规则，也是本条款的一部分。</li>
+</ol>
+
+<h2>第 2 条（账号）</h2>
+<ol>
+<li>请用真实准确的信息注册账号。</li>
+<li>账号只能本人使用，不得转让或借给他人。</li>
+<li>密码等由用户自行负责保管。</li>
+<li>未成年人请在取得监护人同意后使用。</li>
+</ol>
+
+<h2>第 3 条（禁止事项）</h2>
+<p>运营者对令人不适的内容和骚扰行为零容忍。用户不得：</p>
+<ol>
+<li>违反法律法规或公序良俗，或与犯罪有关的行为</li>
+<li>骚扰、威胁、歧视、欺凌、纠缠他人</li>
+<li>发送或发布淫秽、暴力、残忍的内容，或以性的方式对待儿童的内容</li>
+<li>侵犯他人的著作权、肖像权、隐私等权利</li>
+<li>冒充他人，登记虚假信息</li>
+<li>垃圾信息、无差别招揽、以交友约会为目的的招揽、宗教或传销等的招揽</li>
+<li>未经本人同意公开他人的个人信息</li>
+<li>未经对方同意，录音、录像、保存或公开通话和客厅里对方的声音、画面，或限时动态等内容</li>
+<li>反复拨打骚扰电话，在客厅里捣乱或骚扰其他参与者</li>
+<li>非法访问、攻击本 App 或服务器、逆向工程、用自动化工具进行大量操作</li>
+<li>利用本 App 的漏洞</li>
+<li>其他运营者认为不当的行为</li>
+</ol>
+
+<h2>第 4 条（举报、拉黑和处理）</h2>
+<ol>
+<li>用户可以在本 App 内举报或拉黑有问题的用户和内容。</li>
+<li>运营者会核实被举报的内容，原则上在 24 小时内删除内容、停止使用等。</li>
+<li>运营者认定违反本条款时，可以不事先通知，删除内容、暂停或删除账号。</li>
+</ol>
+
+<h2>第 5 条（内容的权利）</h2>
+<ol>
+<li>用户发送和发布的内容，权利归该用户所有。</li>
+<li>运营者可以在提供本 App 所需的范围内（保存、显示给对方、翻译、缩小图片、中转通话等）免费使用这些内容。</li>
+<li>本 App 的设计、程序等的权利，归运营者或正当的权利人所有。</li>
+</ol>
+
+<h2>第 6 条（AI 功能）</h2>
+<ol>
+<li>翻译和 AI 助手的内容由 AI 自动生成，可能不准确。重要的事请自行确认。</li>
+<li>AI 助手建议的发送消息、设提醒等操作，只有用户点了确认按钮才会执行。</li>
+</ol>
+
+<h2>第 7 条（通话、客厅、限时动态）</h2>
+<ol>
+<li>通话和客厅的声音、画面，只用于当场送到对方。运营者不会录音、录像。</li>
+<li>要录下或公开他人的声音、画面时，请务必事先取得对方同意。</li>
+<li>开客厅的人可以决定谁能说话、关掉参与者的麦克风、停止其发消息、请其离开。请把这些功能用于让大家在客厅里愉快交流。</li>
+<li>限时动态发布 24 小时后，其他人就看不到了。但无法完全防止看过的人截屏等保存下来。发布前请确认「谁可以看」的设置。</li>
+<li>本 App 的通话不能拨打 110、119 等紧急电话。</li>
+</ol>
+
+<h2>第 8 条（Mote+）</h2>
+<ol>
+<li>Mote+ 是通过 Apple App 内购买的自动续期订阅。价格和期限在购买页面上显示。</li>
+<li>除非在当期结束前 24 小时以上取消，订阅会自动续期。可以在 iPhone 的「设置」› 你的名字 ›「订阅」里取消。</li>
+<li>付款和退款遵循 Apple 的规定，运营者无法办理退款。</li>
+<li>测试版期间，运营者可以自行决定免费提供 Mote+。免费提供会在运营者确定的时间结束。</li>
+<li>本 App 的使用许可，除本条款外，也适用 Apple 的<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">标准许可协议（EULA）</a>。</li>
+</ol>
+
+<h2>第 9 条（变更、中断、终止）</h2>
+<ol>
+<li>运营者可能变更本 App 的内容，或中断、终止提供。终止时会尽量提前在本 App 内通知。</li>
+<li>本 App 目前是测试版，功能和设计可能不经通知而改变。</li>
+</ol>
+
+<h2>第 10 条（注销）</h2>
+<p>用户可以随时在「设置」里删除账号。删除后信息的处理见隐私政策。</p>
+
+<h2>第 11 条（免责）</h2>
+<ol>
+<li>运营者不保证本 App 没有缺陷、通话和通知总能送达，也不保证符合用户的特定目的。</li>
+<li>用户因使用本 App 受到损害时，除运营者有故意或重大过失的情况外，运营者只对直接且通常的损害负责，上限为损害发生当月用户为 Mote+ 支付的金额。</li>
+<li>用户之间的纠纷请由当事人自行解决，但运营者会按第 4 条处理举报。</li>
+</ol>
+
+<h2>第 12 条（条款的变更）</h2>
+<p>运营者可以按照日本民法关于格式条款（定型約款）的规定变更本条款。变更时，会在生效日之前在本 App 内公布变更后的内容和生效日期。重要变更会再次请你同意。</p>
+
+<h2>第 13 条（适用法律和管辖）</h2>
+<p>本条款依日本法律解释。与本 App 有关的纠纷，以东京地方法院为第一审专属协议管辖法院。</p>
+
+<h2>第 14 条（联系我们）</h2>
+<p><a href="mailto:hakuku_@outlook.com">hakuku_@outlook.com</a></p>
+
+<p class="note">本条款以日语版为正式版本，其他语言版本仅供参考。</p>
+</article>
+
+<!-- ======================= English ======================= -->
+<article lang="en" hidden>
+<h1>Terms of Use</h1>
+<p class="date">Last updated: November 24, 2026 (first issued November 19, 2026)</p>
+<p>These Terms of Use (the "Terms") set out the conditions for using the chat app "Mote" (the "App"), provided by Mote Operations ("we"). To use the App, you need to agree to these Terms and the <a data-doc="privacy" href="privacy.html">Privacy Policy</a>.</p>
+
+<h2>1. Scope</h2>
+<ol>
+<li>These Terms apply to everyone who uses the App ("users").</li>
+<li>Notices and rules shown in the App are part of these Terms.</li>
+</ol>
+
+<h2>2. Your account</h2>
+<ol>
+<li>Register with accurate information.</li>
+<li>Your account is for you only. You may not give or lend it to anyone else.</li>
+<li>You are responsible for keeping your password and similar details safe.</li>
+<li>If you are a minor, use the App with your parent's or guardian's consent.</li>
+</ol>
+
+<h2>3. What you must not do</h2>
+<p>We have zero tolerance for objectionable content and abusive behaviour. You must not:</p>
+<ol>
+<li>break the law or public order and morals, or do anything connected with crime;</li>
+<li>harass, threaten, discriminate against, bully or stalk anyone;</li>
+<li>send or post obscene, violent or cruel content, or content that sexualises children;</li>
+<li>infringe anyone's copyright, portrait rights, privacy or other rights;</li>
+<li>impersonate anyone or register false information;</li>
+<li>spam, solicit indiscriminately, solicit for dating, or recruit for religions, pyramid schemes and the like;</li>
+<li>publish other people's personal information without their consent;</li>
+<li>record, save or publish other people's voice or video from calls or Living rooms, or their Stories, without their consent;</li>
+<li>make repeated nuisance calls, or disrupt a Living room or harass the people in it;</li>
+<li>gain unauthorised access, attack the App or our servers, reverse-engineer the App, or operate it in bulk with automated tools;</li>
+<li>exploit bugs in the App;</li>
+<li>do anything else we reasonably judge inappropriate.</li>
+</ol>
+
+<h2>4. Reporting, blocking and our response</h2>
+<ol>
+<li>You can report or block problem users and content in the App.</li>
+<li>We review reports and, as a rule within 24 hours, remove the content, suspend the user or take other action.</li>
+<li>If we find that someone has broken these Terms, we may remove their content and suspend or delete their account without notice.</li>
+</ol>
+
+<h2>5. Rights to content</h2>
+<ol>
+<li>You keep the rights to what you send and post.</li>
+<li>You let us use it free of charge as far as needed to run the App (storing it, showing it to the people you send it to, translating it, making smaller images, relaying calls and so on).</li>
+<li>The rights to the App's design, software and the like belong to us or their rightful owners.</li>
+</ol>
+
+<h2>6. AI features</h2>
+<ol>
+<li>Translations and the AI assistant's answers are generated automatically by AI and may be wrong. Check anything important yourself.</li>
+<li>When the AI assistant suggests sending a message or setting a reminder, nothing happens unless you press the confirm button.</li>
+</ol>
+
+<h2>7. Calls, Living rooms and Stories</h2>
+<ol>
+<li>The voice and video of calls and Living rooms are used only to reach the other people as it happens. We don't record them.</li>
+<li>If you want to record or publish someone else's voice or video, always get their consent first.</li>
+<li>The person who opens a Living room can choose who may speak, turn someone's microphone off, stop their messages, or remove them. Use these tools to keep the room pleasant for everyone.</li>
+<li>24 hours after a story is posted, other people can no longer see it. But we can't fully stop viewers from keeping it, for example with a screenshot. Check who can see a story before you post it.</li>
+<li>Calls in the App can't reach emergency services such as 110 or 119.</li>
+</ol>
+
+<h2>8. Mote+</h2>
+<ol>
+<li>Mote+ is an auto-renewing subscription bought through Apple's in-app purchase. The price and period are shown on the purchase screen.</li>
+<li>It renews automatically unless you cancel at least 24 hours before the current period ends. You can cancel in the iPhone's Settings › your name › Subscriptions.</li>
+<li>Payments and refunds follow Apple's rules. We can't process refunds ourselves.</li>
+<li>During the beta, we may provide Mote+ free of charge at our discretion. Free access ends when we decide.</li>
+<li>Your licence to use the App is also governed by Apple's <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Standard License Agreement (EULA)</a>.</li>
+</ol>
+
+<h2>9. Changes, interruptions and ending the service</h2>
+<ol>
+<li>We may change the App, or interrupt or stop providing it. If we stop, we'll tell you in the App in advance where we can.</li>
+<li>The App is currently in beta. Features and design may change without notice.</li>
+</ol>
+
+<h2>10. Leaving</h2>
+<p>You can delete your account at any time in Settings. How your information is handled afterwards is described in the Privacy Policy.</p>
+
+<h2>11. Limitation of liability</h2>
+<ol>
+<li>We don't guarantee that the App is free of defects, that calls and notifications will always get through, or that it fits any particular purpose of yours.</li>
+<li>Unless we acted intentionally or with gross negligence, our liability for damage you suffer from using the App is limited to direct and ordinary damage, up to the amount you paid for Mote+ in the month the damage occurred.</li>
+<li>Disputes between users are for the users involved to resolve, though we will still act on reports under section 4.</li>
+</ol>
+
+<h2>12. Changes to these Terms</h2>
+<p>We may change these Terms in line with the provisions on standard terms in Japan's Civil Code. We'll announce the new Terms and the date they take effect in the App before that date. For important changes, we'll ask for your consent again.</p>
+
+<h2>13. Governing law and courts</h2>
+<p>These Terms are governed by Japanese law. The Tokyo District Court has exclusive jurisdiction as the court of first instance for disputes about the App.</p>
+
+<h2>14. Contact</h2>
+<p><a href="mailto:hakuku_@outlook.com">hakuku_@outlook.com</a></p>
+
+<p class="note">The Japanese version of these Terms is the official one. Other languages are translations for reference.</p>
+</article>
+
+<!-- ======================= 한국어 ======================= -->
+<article lang="ko" hidden>
+<h1>이용약관</h1>
+<p class="date">개정일: 2026년 11월 24일 (제정일: 2026년 11월 19일)</p>
+<p>이 이용약관(이하 '본 약관')은 Mote 운영(이하 '운영자')이 제공하는 채팅 앱 'Mote'(이하 '본 앱')의 이용 조건을 정합니다. 본 앱을 이용하려면 본 약관과 <a data-doc="privacy" href="privacy.html">개인정보 처리방침</a>에 동의해야 합니다.</p>
+
+<h2>제1조(적용)</h2>
+<ol>
+<li>본 약관은 본 앱을 이용하는 모든 분(이하 '이용자')에게 적용됩니다.</li>
+<li>본 앱 안에서 안내하는 공지와 규칙도 본 약관의 일부입니다.</li>
+</ol>
+
+<h2>제2조(계정)</h2>
+<ol>
+<li>계정은 정확한 정보로 등록해 주세요.</li>
+<li>계정은 본인만 이용할 수 있으며, 다른 사람에게 양도하거나 빌려줄 수 없습니다.</li>
+<li>비밀번호 등은 이용자가 직접 책임지고 관리해 주세요.</li>
+<li>미성년자는 보호자의 동의를 받은 후 이용해 주세요.</li>
+</ol>
+
+<h2>제3조(금지 행위)</h2>
+<p>운영자는 불쾌한 콘텐츠와 괴롭힘을 일절 용인하지 않습니다. 이용자는 다음 행위를 해서는 안 됩니다.</p>
+<ol>
+<li>법령이나 공공질서·미풍양속에 반하는 행위, 범죄와 관련된 행위</li>
+<li>다른 사람에 대한 괴롭힘, 협박, 차별, 따돌림, 스토킹</li>
+<li>음란하거나 폭력적·잔혹한 내용, 아동을 성적으로 다루는 내용을 보내거나 올리는 행위</li>
+<li>다른 사람의 저작권, 초상권, 사생활 등의 권리를 침해하는 행위</li>
+<li>다른 사람을 사칭하거나 거짓 정보를 등록하는 행위</li>
+<li>스팸, 무차별 권유, 만남을 목적으로 한 권유, 종교나 다단계 등의 권유</li>
+<li>다른 사람의 개인정보를 본인 동의 없이 공개하는 행위</li>
+<li>통화나 거실에서의 상대의 음성·영상, 스토리 등을 상대의 동의 없이 녹음·녹화·저장하거나 공개하는 행위</li>
+<li>반복적인 괴롭힘 전화, 거실을 어지럽히거나 다른 참가자를 괴롭히는 행위</li>
+<li>무단 접근, 본 앱이나 서버에 대한 공격, 리버스 엔지니어링, 자동화 도구를 이용한 대량 조작</li>
+<li>본 앱의 오류를 악용하는 행위</li>
+<li>그 밖에 운영자가 부적절하다고 판단하는 행위</li>
+</ol>
+
+<h2>제4조(신고·차단과 대응)</h2>
+<ol>
+<li>이용자는 문제가 있는 사용자나 게시물을 본 앱 안에서 신고하거나 차단할 수 있습니다.</li>
+<li>운영자는 신고된 내용을 확인하고, 원칙적으로 24시간 이내에 게시물 삭제, 이용 정지 등의 조치를 합니다.</li>
+<li>운영자는 본 약관 위반으로 판단한 경우, 사전 통지 없이 게시물을 삭제하거나 계정을 일시 정지 또는 삭제할 수 있습니다.</li>
+</ol>
+
+<h2>제5조(콘텐츠의 권리)</h2>
+<ol>
+<li>이용자가 보내거나 올린 내용의 권리는 그 이용자에게 있습니다.</li>
+<li>운영자는 본 앱 제공에 필요한 범위(저장, 상대에게 표시, 번역, 이미지 축소, 통화 중계 등)에서 그 내용을 무상으로 이용할 수 있습니다.</li>
+<li>본 앱의 디자인, 프로그램 등의 권리는 운영자 또는 정당한 권리자에게 있습니다.</li>
+</ol>
+
+<h2>제6조(AI 기능)</h2>
+<ol>
+<li>번역과 AI 어시스턴트의 내용은 AI가 자동으로 만든 것으로, 정확하지 않을 수 있습니다. 중요한 내용은 직접 확인해 주세요.</li>
+<li>AI 어시스턴트가 제안하는 메시지 전송이나 리마인더 설정은 이용자가 확인 버튼을 눌렀을 때만 실행됩니다.</li>
+</ol>
+
+<h2>제7조(통화·거실·스토리)</h2>
+<ol>
+<li>통화와 거실의 음성·영상은 상대에게 그 자리에서 전달하기 위해서만 씁니다. 운영자는 녹음·녹화하지 않습니다.</li>
+<li>다른 사람의 음성이나 영상을 녹음·녹화하거나 공개할 때는 반드시 미리 그 사람의 동의를 받아 주세요.</li>
+<li>거실을 연 사람은 말할 수 있는 사람을 정하거나, 참가자의 마이크를 끄거나, 메시지를 막거나, 참가자를 내보낼 수 있습니다. 이 기능은 모두가 거실을 즐겁게 이용할 수 있도록 써 주세요.</li>
+<li>스토리는 올린 지 24시간이 지나면 다른 사람은 볼 수 없습니다. 다만 본 사람이 스크린샷 등으로 남기는 것을 완전히 막을 수는 없습니다. 볼 수 있는 사람 설정을 확인한 후 올려 주세요.</li>
+<li>본 앱의 통화로는 110이나 119 등 긴급 전화를 걸 수 없습니다.</li>
+</ol>
+
+<h2>제8조(Mote+)</h2>
+<ol>
+<li>Mote+는 Apple 앱 내 구입으로 이용하는 자동 갱신 구독입니다. 가격과 기간은 구입 화면에 표시합니다.</li>
+<li>현재 기간이 끝나기 24시간 전까지 해지하지 않으면 자동으로 갱신됩니다. 해지는 iPhone의 '설정' › 내 이름 › '구독'에서 할 수 있습니다.</li>
+<li>결제와 환불은 Apple의 규정을 따릅니다. 운영자는 환불 절차를 진행할 수 없습니다.</li>
+<li>베타 기간에는 운영자의 판단으로 Mote+를 무료로 제공할 수 있습니다. 무료 제공은 운영자가 정한 시기에 끝납니다.</li>
+<li>본 앱의 사용 허락에는 본 약관 외에 Apple의 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">표준 사용권 계약(EULA)</a>이 적용됩니다.</li>
+</ol>
+
+<h2>제9조(변경·중단·종료)</h2>
+<ol>
+<li>운영자는 본 앱의 내용을 바꾸거나 제공을 중단·종료할 수 있습니다. 종료하는 경우 가능한 한 미리 본 앱에서 알려 드립니다.</li>
+<li>본 앱은 현재 베타 버전입니다. 기능과 디자인이 예고 없이 바뀔 수 있습니다.</li>
+</ol>
+
+<h2>제10조(탈퇴)</h2>
+<p>이용자는 '설정'에서 언제든지 계정을 삭제할 수 있습니다. 삭제 후 정보의 처리는 개인정보 처리방침과 같습니다.</p>
+
+<h2>제11조(면책)</h2>
+<ol>
+<li>운영자는 본 앱에 오류가 없다는 것, 통화와 알림이 항상 전달된다는 것, 이용자의 특정 목적에 맞는다는 것을 보증하지 않습니다.</li>
+<li>본 앱 이용으로 이용자에게 생긴 손해에 대해, 운영자에게 고의 또는 중대한 과실이 있는 경우를 제외하고, 운영자는 직접적이고 통상적인 손해에 한해, 손해가 생긴 달에 이용자가 Mote+에 지불한 금액을 한도로 책임을 집니다.</li>
+<li>이용자 간의 분쟁은 당사자끼리 해결해 주세요. 다만 운영자는 제4조의 신고에는 대응합니다.</li>
+</ol>
+
+<h2>제12조(약관의 변경)</h2>
+<p>운영자는 일본 민법의 정형약관 규정에 따라 본 약관을 변경할 수 있습니다. 변경하는 경우 변경 후 내용과 효력 발생일을 그 날짜 전에 본 앱에서 알려 드립니다. 중요한 변경은 다시 동의를 요청합니다.</p>
+
+<h2>제13조(준거법·관할)</h2>
+<p>본 약관은 일본법에 따라 해석합니다. 본 앱과 관련된 분쟁은 도쿄지방재판소를 제1심 전속적 합의 관할 법원으로 합니다.</p>
+
+<h2>제14조(문의)</h2>
+<p><a href="mailto:hakuku_@outlook.com">hakuku_@outlook.com</a></p>
+
+<p class="note">본 약관은 일본어판을 정본으로 합니다. 다른 언어판은 참고용 번역입니다.</p>
+</article>
+
+</main>
+<script>
+(() => {
+  // ?lang=ja|zh|en|ko picks the language (the app passes its own); otherwise the browser's. ?dark=1|0 follows the app's look.
+  const q = new URLSearchParams(location.search), langs = ['ja', 'zh', 'en', 'ko'];
+  let l = (q.get('lang') || navigator.language || 'ja').slice(0, 2).toLowerCase();
+  if (!langs.includes(l)) l = 'ja';
+  if (q.get('dark') === '1') document.documentElement.classList.add('dark');
+  if (q.get('dark') === '0') document.documentElement.classList.add('light');
+  if (q.get('embed') === '1') document.documentElement.classList.add('embed');   // inside the app: the sheet's colour
+  const arts = [...document.querySelectorAll('article')], btns = [...document.querySelectorAll('#bar button')];
+  const show = k => {
+    arts.forEach(a => { a.hidden = (a.dataset.l || a.lang) !== k; });
+    btns.forEach(b => b.classList.toggle('on', b.dataset.l === k));
+    const a = arts.find(x => !x.hidden); document.documentElement.lang = a.lang;
+    document.title = 'Mote ' + a.querySelector('h1').textContent;
+    document.querySelectorAll('a[data-doc]').forEach(x => { x.href = x.dataset.doc + '.html?lang=' + k + (q.get('dark') ? '&dark=' + q.get('dark') : '') + (q.get('embed') ? '&embed=1' : ''); });
+  };
+  btns.forEach(b => b.addEventListener('click', () => { show(b.dataset.l); scrollTo(0, 0); }));
+  show(l);
+})();
+</script>
+</body>
+</html>

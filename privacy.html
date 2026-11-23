@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mote プライバシーポリシー</title>
+<!-- Mote 的隐私政策。日语版为正本，其他语言是参考译文。
+     这个文件同时用在两处：公开网址（App Store Connect 要填）和 App 里（各安装脚本把它复制到 ios/Mote/，设置和登录页里打开）。
+     内容改了要同时改四种语言，并在 src/app/hud/legal.js 里把 LEGAL_VER 改成新的日期，已登录的人会被请求重新同意。 -->
+<style>
+:root{color-scheme:light dark;--bg:#f5f6f8;--ink:#1d2129;--ink2:#5b6370;--line:rgba(0,0,0,.09);--chip:rgba(112,120,132,.12);--accent:#1d9e75}
+@media (prefers-color-scheme:dark){:root:not(.light){--bg:#121417;--ink:#eceff3;--ink2:#9aa3ae;--line:rgba(255,255,255,.12);--chip:rgba(255,255,255,.1);--accent:#5dcaa5}}
+:root.dark{--bg:#121417;--ink:#eceff3;--ink2:#9aa3ae;--line:rgba(255,255,255,.12);--chip:rgba(255,255,255,.1);--accent:#5dcaa5;color-scheme:dark}
+:root.light{color-scheme:light}
+:root.embed{--bg:#f5f6f8}
+:root.embed.dark{--bg:#1d2025}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.75 -apple-system,BlinkMacSystemFont,"Hiragino Sans","PingFang SC","Apple SD Gothic Neo",system-ui,sans-serif;-webkit-text-size-adjust:100%}
+.bar{position:sticky;top:0;z-index:1;display:flex;justify-content:center;gap:4px;padding:10px 12px;background:color-mix(in srgb,var(--bg) 82%,transparent);-webkit-backdrop-filter:blur(20px);backdrop-filter:blur(20px)}
+.bar button{border:0;padding:5px 12px;border-radius:10px;background:none;color:var(--ink2);font:inherit;font-size:13px}
+.bar button.on{background:var(--chip);color:var(--ink);font-weight:650}
+main{max-width:680px;margin:0 auto;padding:6px 22px calc(56px + env(safe-area-inset-bottom))}
+article[hidden]{display:none}
+h1{margin:16px 0 2px;font-size:26px;line-height:1.25;letter-spacing:-.02em}
+.date{margin:0 0 18px;color:var(--ink2);font-size:13px}
+h2{margin:30px 0 6px;font-size:17px;line-height:1.4;letter-spacing:-.01em}
+p{margin:6px 0}
+ul,ol{margin:6px 0;padding-left:1.3em}
+li{margin:4px 0}
+b{font-weight:650}
+.svc{margin:10px 0;padding:10px 0 2px;border-top:.5px solid var(--line)}
+.svc p{margin:2px 0 6px;color:var(--ink2)}
+a{color:var(--accent)}
+.note{margin-top:30px;padding-top:12px;border-top:.5px solid var(--line);color:var(--ink2);font-size:13px}
+</style>
+</head>
+<body>
+<nav class="bar" id="bar"><button data-l="ja">日本語</button><button data-l="zh">中文</button><button data-l="en">English</button><button data-l="ko">한국어</button></nav>
+<main>
+
+<!-- ======================= 日本語（正本） ======================= -->
+<article lang="ja">
+<h1>プライバシーポリシー</h1>
+<p class="date">改定日：2026年11月24日（制定日：2026年11月19日）</p>
+<p>Mote運営（以下「運営者」）は、チャットアプリ「Mote」（以下「本アプリ」）の利用者の個人情報を、個人情報の保護に関する法律その他の法令に従い、このポリシーのとおり取り扱います。</p>
+
+<h2>1. 運営者</h2>
+<p>名称：Mote運営<br>連絡先：<a href="mailto:hakuku_@outlook.com">hakuku_@outlook.com</a><br>運営者の氏名と住所は、ご請求があれば遅滞なくお知らせします。</p>
+
+<h2>2. 取得する情報</h2>
+<ul>
+<li><b>アカウント</b>：メールアドレスとパスワード（パスワードは元に戻せない形で保存し、運営者も見ることはできません）。Apple でサインインした場合は、Apple から受け取る識別子と、初回のみ名前とメールアドレス。</li>
+<li><b>プロフィールと設定</b>：表示名、ID、アイコンとカバー写真、自己紹介、テーマカラーや着信を許可する相手などの設定、保存したウィジェットのレイアウト。</li>
+<li><b>あなたが送る・投稿する内容</b>：メッセージ（写真、動画、ファイル、音声メッセージを含みます）、メッセージへのリアクション、自分の画面からだけ削除したメッセージの記録、手紙、リマインダー、グループ、モーメンツの投稿・いいね・コメント、友だちにつけた名前、友だちのグループ分け、友だちとブロックの関係、通報の内容。</li>
+<li><b>ストーリー</b>：投稿した写真・動画・文字と、見られる人の設定。見た人とハートの記録。ストーリーを非表示にした相手。</li>
+<li><b>通話とリビング</b>：音声通話・ビデオ通話の記録（かけた人と受けた人、日時、音声かビデオか、通話時間、応答・不在・拒否などの結果）。この記録はチャットにも表示されます。リビング（友だちとの音声ルーム）を開いた記録（開いた人、テーマ、見られる人の設定、開始と終了の時刻）。</li>
+<li><b>ご意見</b>：種類と本文、アプリのバージョン、機種名と OS のバージョン、アプリの表示言語。アカウントと結びつけて保存します。</li>
+<li><b>位置情報</b>（許可した場合のみ）：天気の表示と、AI アシスタントが天気を調べるときに使うおおよその位置（約10km単位）。「友だちに地域を表示」をオンにした場合は、区や市までの地域名（例：世田谷区）。正確な位置は保存しません。</li>
+<li><b>利用状況</b>：オンライン状態と最後に接続した時刻、翻訳と AI アシスタントの利用回数、Mote+ の購読状態（Apple の取引番号と有効期限）。</li>
+<li><b>端末の情報</b>：通知に使う端末ごとの鍵（ハッシュ化して保存）と、Apple が発行する通知用のトークン（ふつうの通知用と、通話の着信用）。</li>
+<li><b>AI アシスタントへの依頼</b>：話しかけた内容を文字にしたもの。</li>
+</ul>
+<p>通話とリビングの音声・映像、リビングの中で送るメッセージは、相手に届けるために中継するだけで、保存しません。</p>
+<p>次の情報は端末の中だけで使い、運営者には送りません：Face ID（本人確認の結果だけを使います）、iPhone の「カレンダー」と「リマインダー」の内容（ウィジェットに表示するためだけに読み取ります）、モーションセンサー。通話とリビングでの声のノイズ除去（Krisp）も端末の中で行い、そのために音声をほかへ送ることはありません。カメラ、マイク、写真は、あなたが送ると決めたものと、通話中やリビングで話している間の音声・映像だけを送ります。</p>
+<p>チャットの履歴や写真などは、すぐに表示できるよう端末にも保存します。端末の中のものは「設定 › ストレージ」から消せます。</p>
+
+<h2>3. 利用目的</h2>
+<ol>
+<li>本アプリの提供（メッセージの配信、通話、リビング、ストーリー、友だち、通知、翻訳、AI アシスタント、天気など）</li>
+<li>ログイン、本人確認、不正利用の防止</li>
+<li>通報への対応と、利用規約に違反する行為への対応</li>
+<li>Mote+ の購読の確認と提供</li>
+<li>お問い合わせとご意見への対応、不具合の調査、本アプリの改善</li>
+<li>規約の変更など、大切なお知らせ</li>
+</ol>
+<p>広告の表示や、広告のための追跡はしません。</p>
+
+<h2>4. 通信の秘密</h2>
+<p>運営者は、電気通信事業法に定める通信の秘密を守ります。メッセージの内容を確認するのは、通報された内容を確認する場合、法令に基づく場合、あなたの同意がある場合に限ります。通話とリビングの音声・映像は、運営者が録音・録画することも、聞くこともありません。</p>
+
+<h2>5. 第三者への提供</h2>
+<p>次の場合を除き、あなたの同意なく個人情報を第三者に提供しません。</p>
+<ul>
+<li>法令に基づく場合</li>
+<li>人の生命、身体または財産を守るために必要で、本人の同意を得ることが難しい場合</li>
+<li>その他、個人情報保護法で認められている場合</li>
+</ul>
+<p>あなたのプロフィールや投稿は、あなたが選んだ相手（友だち、グループのメンバー、ストーリーやリビングを見られる人など）に表示されます。リビングに入ると、あなたの表示名とアイコンは、同じリビングにいる人（あなたの友だちでない人を含みます）に表示されます。ストーリーを見たことやハートは、投稿した人にだけ表示されます。ストーリーを非表示にしたことは、相手には知らされません。</p>
+
+<h2>6. 外部のサービス（外国にある第三者への提供を含む）</h2>
+<p>本アプリは次の外部サービスを使っています。米国の事業者への提供については、登録するとき、または利用を続ける前に同意をいただきます。</p>
+<div class="svc"><b>Supabase（Supabase, Inc.・米国）</b><p>サーバーに保存するすべての情報（2の情報のうち、端末の中だけで使うもの以外）。データの保存、ログイン、リアルタイムの配信、通知の送信、確認メールの送信に使います。データは東京（日本）のサーバーに保存され、Supabase は運営者の指示の範囲でのみ扱います。</p></div>
+<div class="svc"><b>Anthropic（Anthropic, PBC・米国）</b><p>翻訳する文章（メッセージなど）の本文、AI アシスタントへの依頼と直前のやりとり、依頼に必要な友だちの表示名、現在の日時とおおよその地域名。翻訳と AI アシスタントに使います。相手が自動翻訳をオンにしている場合、あなたが送ったメッセージも翻訳のために送られます。Anthropic は、これらのデータを AI の学習に使いません。</p></div>
+<div class="svc"><b>LiveKit（LiveKit, Inc.・米国）</b><p>音声通話・ビデオ通話とリビングの音声・映像、リビングの中で送るメッセージ、参加者を表示するためのユーザー ID・表示名・アイコン。相手にリアルタイムで届けるため、LiveKit Cloud のサーバーで中継します。録音・録画はせず、音声・映像は保存されません。接続の記録（参加者の ID、接続した時刻など）は、LiveKit がサービスの運用のために一定期間保持することがあります。</p></div>
+<div class="svc"><b>Apple（Apple Inc.・米国）</b><p>Apple でサインイン、App 内課金、プッシュ通知（Apple Push Notification service）、天気（WeatherKit）、地域名の取得、音声入力（端末で認識できない言語の場合）。プッシュ通知では、通知に表示する内容（送った人の表示名とアイコン、グループ名、メッセージの冒頭（最大180文字）、写真などの種類）と、通話の着信（かけた人の表示名、音声かビデオか）が Apple を経由して届きます。天気には、おおよその位置（約10km単位）を送ります。</p></div>
+<div class="svc"><b>Open-Meteo</b><p>天気を調べるためのおおよその位置（約10km単位）と地名（AI アシスタントが天気を調べる場合など）。アカウントとは結びつけずに送ります。</p></div>
+<p><b>米国の個人情報保護制度</b>：米国には、日本の個人情報保護法に相当する包括的な連邦法はなく、カリフォルニア州消費者プライバシー法などの州法と、分野ごとの連邦法があります。詳しくは、個人情報保護委員会が公表している「外国における個人情報の保護に関する制度等の調査」をご覧ください。</p>
+<p><b>提供先がとっている措置</b>：上記の事業者は、通信と保存データの暗号化、アクセスの制限、利用目的の限定など、個人情報を守るための措置をとっています。LiveKit は、通話とリビングの音声・映像を暗号化して中継するだけで、保存しません。</p>
+
+<h2>7. 保存期間と削除</h2>
+<ul>
+<li>情報は、アカウントがある間保存します。</li>
+<li>「設定」からアカウントを削除すると、7日後に、アカウント、プロフィール、アイコン、友だちとブロックの関係、モーメンツの投稿・いいね・コメント、ストーリーなどを削除します。7日以内にもう一度ログインすると、削除は取り消されます。</li>
+<li>送ったメッセージの文字と通話の記録は相手の会話の履歴として残りますが、送った人が誰かは表示されなくなります。送った写真・動画・ファイル・ボイスと、アイコンなどアップロードしたファイルは、サーバーからすべて削除します。</li>
+<li>チャットで送った写真・動画・ファイル・ボイスは、送ってから90日（ファイルと元画質の動画は30日）たつとサーバーから削除します。相手が30日以内に開かなかった写真・動画・ファイルは、30日後に削除します。端末に保存されたものは、端末の中で引き続き見られます。</li>
+<li>ストーリーは、投稿から24時間たつと、あなた以外の人は見られなくなります。そのあとは、あなただけが見られるアーカイブとして残り、あなたが削除したとき、またはアカウントを削除したときに、写真・動画、見た人とハートの記録と一緒に削除します。</li>
+<li>通話とリビングの音声・映像と、リビングの中で送るメッセージは保存しません。</li>
+<li>ご意見は、アカウントを削除したあとも、送った人が分からない形で残ります。</li>
+<li>Apple でサインインしていた場合は、Apple との連携も解除します。</li>
+<li>法令で保存が必要な情報は、その期間保存することがあります。</li>
+</ul>
+
+<h2>8. 安全管理のための措置</h2>
+<ul>
+<li>通信はすべて暗号化しています（HTTPS。通話とリビングの音声・映像も暗号化して送ります）。</li>
+<li>データベースでは、本人と、本人が許可した相手（友だち、グループのメンバーなど）だけが読めるように、データごとにアクセスを制限しています。</li>
+<li>パスワードは元に戻せない形（ハッシュ）で保存しています。</li>
+<li>管理用の鍵はサーバーだけに置き、アプリには入れていません。</li>
+<li>管理画面に入れるのは運営者だけです。</li>
+<li>外的環境の把握：データは日本（東京）のサーバーに保存しています。米国の事業者のサービスを使っていることは、6のとおりです。</li>
+</ul>
+
+<h2>9. 開示・訂正・削除などのご請求</h2>
+<p>ご自身の情報について、開示、訂正、追加、削除、利用の停止、第三者への提供の停止、第三者提供記録の開示を請求できます。連絡先までご連絡ください。ご本人であることを確認したうえで、遅滞なく対応します。プロフィールの変更とアカウントの削除は、アプリの「設定」からもできます。</p>
+
+<h2>10. 未成年の方</h2>
+<p>未成年の方は、保護者の同意を得たうえでご利用ください。</p>
+
+<h2>11. 外部に送られる情報</h2>
+<p>本アプリから外部に送られる情報は6のとおりです。広告やアクセス解析のためのツールは使っていません。</p>
+
+<h2>12. このポリシーの変更</h2>
+<p>内容を変える場合は、本アプリでお知らせします。大切な変更の場合は、改めて同意をお願いします。</p>
+
+<h2>13. お問い合わせ</h2>
+<p><a href="mailto:hakuku_@outlook.com">hakuku_@outlook.com</a><br>アプリの「設定 › ご意見・ご要望」からも受け付けています。</p>
+
+<p class="note">このポリシーは日本語版を正式なものとします。他の言語版は参考のための翻訳です。</p>
+</article>
+
+<!-- ======================= 中文 ======================= -->
+<article lang="zh-Hans" data-l="zh" hidden>
+<h1>隐私政策</h1>
+<p class="date">修订日期：2026 年 11 月 24 日（制定日期：2026 年 11 月 19 日）</p>
+<p>Mote 运营（以下称「运营者」）按照日本《个人信息保护法》等法律法规，依本政策处理聊天 App「Mote」（以下称「本 App」）用户的个人信息。</p>
+
+<h2>1. 运营者</h2>
+<p>名称：Mote 运营<br>联系方式：<a href="mailto:hakuku_@outlook.com">hakuku_@outlook.com</a><br>如需了解运营者的姓名和住址，提出请求后我们会及时告知。</p>
+
+<h2>2. 收集的信息</h2>
+<ul>
+<li><b>账号</b>：邮箱和密码（密码以无法还原的形式保存，运营者也看不到）。用 Apple 登录时，Apple 提供的标识符，以及仅第一次提供的姓名和邮箱。</li>
+<li><b>个人资料和设置</b>：显示名、ID、头像和封面照片、个人简介，主题色、谁可以打给你等设置，保存的小组件布局。</li>
+<li><b>你发送和发布的内容</b>：消息（包括照片、视频、文件和语音消息）、对消息的表情回应、只对自己删除的消息记录、信件、提醒、群聊、动态、点赞和评论，给好友设的备注名，好友分组，好友和黑名单关系，举报的内容。</li>
+<li><b>限时动态</b>：发布的照片、视频、文字和「谁可以看」的设置；谁看过、谁点了心的记录；你选择不看其限时动态的人。</li>
+<li><b>通话和客厅</b>：语音通话、视频通话的记录（谁打给谁、时间、语音还是视频、通话时长、接通、未接、拒接等结果）。这些记录也会显示在聊天里。开客厅（好友语音房间）的记录（谁开的、话题、谁能看到的设置、开始和结束时间）。</li>
+<li><b>意见反馈</b>：类型和内容、App 版本、机型和系统版本、App 当时使用的语言。与账号关联保存。</li>
+<li><b>位置</b>（仅在你允许时）：显示天气和 AI 助手查天气时用的大致位置（约 10 公里精度）。打开「向好友显示位置」后，还有到区或市一级的地名（如世田谷区）。不保存精确位置。</li>
+<li><b>使用情况</b>：在线状态和最后连接时间，翻译和 AI 助手的使用次数，Mote+ 的订阅状态（Apple 的交易编号和到期时间）。</li>
+<li><b>设备信息</b>：用于通知的设备密钥（以哈希形式保存），以及 Apple 发放的通知令牌（普通通知用和来电用）。</li>
+<li><b>对 AI 助手说的话</b>：转成文字后的内容。</li>
+</ul>
+<p>通话和客厅的声音、画面，以及客厅里发的消息，只为送到对方而中转，不会保存。</p>
+<p>以下信息只在手机上使用，不会发给运营者：面容 ID（只使用验证结果）、iPhone「日历」和「提醒事项」的内容（只为显示在小组件上而读取）、运动传感器。通话和客厅里的人声降噪（Krisp）也在手机上完成，不会为此把声音发到别处。相机、麦克风和照片，只发送你决定发送的内容，以及通话中、在客厅里说话时的声音和画面。</p>
+<p>聊天记录和照片等也会保存在手机上，以便快速显示。手机上的这些内容可以在「设置 › 存储空间」里清除。</p>
+
+<h2>3. 使用目的</h2>
+<ol>
+<li>提供本 App 的功能（消息投递、通话、客厅、限时动态、好友、通知、翻译、AI 助手、天气等）</li>
+<li>登录、身份验证、防止滥用</li>
+<li>处理举报，处理违反使用条款的行为</li>
+<li>确认和提供 Mote+ 订阅</li>
+<li>回复咨询和意见，调查问题，改进本 App</li>
+<li>通知条款变更等重要事项</li>
+</ol>
+<p>我们不显示广告，也不为广告追踪你。</p>
+
+<h2>4. 通信秘密</h2>
+<p>运营者遵守日本《电气通信事业法》规定的通信秘密。只有在核实被举报的内容、依据法律法规、或得到你同意时，才会查看消息内容。运营者不会录下通话和客厅的声音、画面，也不会收听。</p>
+
+<h2>5. 向第三方提供</h2>
+<p>除以下情况外，未经你同意，我们不会把个人信息提供给第三方：</p>
+<ul>
+<li>依据法律法规</li>
+<li>为保护人的生命、身体或财产所必需，且难以取得本人同意</li>
+<li>其他《个人信息保护法》允许的情况</li>
+</ul>
+<p>你的个人资料和动态，会显示给你选择的对象（好友、群成员、能看到你的限时动态或客厅的人等）。进入客厅后，你的显示名和头像会显示给同一个客厅里的人（包括不是你好友的人）。看过限时动态、点了心，只有发布的人看得到。你不看某人的限时动态，对方不会知道。</p>
+
+<h2>6. 外部服务（含向外国第三方提供）</h2>
+<p>本 App 使用以下外部服务。向美国服务商提供信息，会在注册时或继续使用前征得你的同意。</p>
+<div class="svc"><b>Supabase（Supabase, Inc.，美国）</b><p>保存在服务器上的全部信息（第 2 条中只在手机上使用的除外）。用于保存数据、登录、实时投递、发送通知和发送确认邮件。数据保存在东京（日本）的服务器上，Supabase 只在运营者指示的范围内处理。</p></div>
+<div class="svc"><b>Anthropic（Anthropic, PBC，美国）</b><p>需要翻译的文字（消息等）、对 AI 助手的请求和之前几轮对话，完成请求所需的好友显示名，以及当前时间和大致地区名。用于翻译和 AI 助手。对方打开了自动翻译时，你发给对方的消息也会被送去翻译。Anthropic 不会用这些数据训练 AI。</p></div>
+<div class="svc"><b>LiveKit（LiveKit, Inc.，美国）</b><p>语音通话、视频通话和客厅的声音、画面，客厅里发的消息，以及显示参与者用的用户 ID、显示名和头像。为了实时送到对方，经由 LiveKit Cloud 的服务器中转。不录音、不录像，声音和画面不会被保存。连接记录（参与者 ID、连接时间等）可能由 LiveKit 为运营服务保留一段时间。</p></div>
+<div class="svc"><b>Apple（Apple Inc.，美国）</b><p>Apple 登录、App 内购买、推送通知（Apple 推送通知服务）、天气（WeatherKit）、获取地名、语音输入（手机上无法识别的语言）。推送通知时，通知上显示的内容（发送人的显示名和头像、群名、消息开头（最多 180 个字）、照片等类型）和来电（打来的人的显示名、语音还是视频）经由 Apple 送达。查天气时会发送大致位置（约 10 公里精度）。</p></div>
+<div class="svc"><b>Open-Meteo</b><p>查天气用的大致位置（约 10 公里精度）和地名（例如 AI 助手查天气时），发送时不与账号关联。</p></div>
+<p><b>美国的个人信息保护制度</b>：美国没有相当于日本《个人信息保护法》的综合性联邦法律，而是由《加州消费者隐私法》等州法和各领域的联邦法律组成。详情请参阅日本个人信息保护委员会公布的「外国个人信息保护制度调查」。</p>
+<p><b>接收方采取的措施</b>：上述服务商对传输和存储的数据进行加密，限制访问，限定使用目的，采取了保护个人信息的措施。LiveKit 只对通话和客厅的声音、画面加密中转，不保存。</p>
+
+<h2>7. 保存期限和删除</h2>
+<ul>
+<li>信息在账号存在期间保存。</li>
+<li>在「设置」里删除账号后，7 天后会删除账号、个人资料、头像、好友和黑名单关系、动态、点赞和评论、限时动态等。7 天内再次登录，会取消删除。</li>
+<li>你发出的文字消息和通话记录会作为对方的聊天记录保留，但不再显示是谁发的。你发出的照片、视频、文件、语音，以及头像等你上传的文件，会从服务器上全部删除。</li>
+<li>聊天里发送的照片、视频、文件、语音，发出 90 天后（文件和原画视频 30 天后）从服务器删除；对方 30 天内没有打开的照片、视频、文件，30 天后删除。已经保存在手机上的，手机里还能看。</li>
+<li>限时动态发布 24 小时后，除你以外的人就看不到了。之后作为只有你能看的存档保留，在你删除它或删除账号时，连同照片、视频和看过、点心的记录一起删除。</li>
+<li>通话和客厅的声音、画面，以及客厅里发的消息，不会保存。</li>
+<li>意见反馈在删除账号后仍会保留，但不再知道是谁发的。</li>
+<li>用 Apple 登录的，也会解除和 Apple 的关联。</li>
+<li>法律法规要求保存的信息，会在规定期间内保存。</li>
+</ul>
+
+<h2>8. 安全措施</h2>
+<ul>
+<li>所有通信都经过加密（HTTPS；通话和客厅的声音、画面也加密传输）。</li>
+<li>数据库按每条数据限制访问，只有本人和本人允许的对象（好友、群成员等）能读取。</li>
+<li>密码以无法还原的形式（哈希）保存。</li>
+<li>管理用的密钥只放在服务器上，不放在 App 里。</li>
+<li>只有运营者能进入管理后台。</li>
+<li>外部环境：数据保存在日本（东京）的服务器上；使用美国服务商的情况见第 6 条。</li>
+</ul>
+
+<h2>9. 查询、更正、删除等请求</h2>
+<p>你可以请求查询、更正、补充、删除自己的信息，停止使用，停止向第三方提供，以及查询向第三方提供的记录。请通过联系方式联系我们，确认是本人后会及时处理。修改个人资料和删除账号，也可以在 App 的「设置」里完成。</p>
+
+<h2>10. 未成年人</h2>
+<p>未成年人请在取得监护人同意后使用。</p>
+
+<h2>11. 向外部发送的信息</h2>
+<p>本 App 向外部发送的信息见第 6 条。我们没有使用广告或访问分析工具。</p>
+
+<h2>12. 本政策的变更</h2>
+<p>内容变更时会在本 App 内通知。重要变更会再次请你同意。</p>
+
+<h2>13. 联系我们</h2>
+<p><a href="mailto:hakuku_@outlook.com">hakuku_@outlook.com</a><br>也可以通过 App 里的「设置 › 意见反馈」联系。</p>
+
+<p class="note">本政策以日语版为正式版本，其他语言版本仅供参考。</p>
+</article>
+
+<!-- ======================= English ======================= -->
+<article lang="en" hidden>
+<h1>Privacy Policy</h1>
+<p class="date">Last updated: November 24, 2026 (first issued November 19, 2026)</p>
+<p>Mote Operations ("we") handles the personal information of people who use the chat app "Mote" (the "App") as described in this policy, in line with Japan's Act on the Protection of Personal Information and other applicable laws.</p>
+
+<h2>1. Who we are</h2>
+<p>Name: Mote Operations<br>Contact: <a href="mailto:hakuku_@outlook.com">hakuku_@outlook.com</a><br>We will tell you the operator's name and address without delay if you ask.</p>
+
+<h2>2. What we collect</h2>
+<ul>
+<li><b>Account</b>: your email address and password (stored in a form that can't be reversed; we can't see it). If you sign in with Apple: the identifier Apple gives us, and your name and email the first time only.</li>
+<li><b>Profile and settings</b>: display name, ID, profile and cover photos, bio, settings such as your theme colour and who can call you, and the widget layouts you save.</li>
+<li><b>What you send and post</b>: messages (including photos, videos, files and voice messages), reactions to messages, which messages you deleted for yourself only, letters, reminders, groups, Moments posts, likes and comments, names you give your friends, your friend lists, your friends and block list, and what you write in reports.</li>
+<li><b>Stories</b>: the photos, videos and text you post and who can see them; who viewed them and who sent a heart; people whose stories you've hidden.</li>
+<li><b>Calls and Living rooms</b>: records of voice and video calls (who called whom, when, voice or video, how long, and whether the call was answered, missed or declined). These records also appear in the chat. Records of Living rooms (voice rooms with friends) you open (who opened it, the topic, who can see it, and when it started and ended).</li>
+<li><b>Feedback</b>: the type and text, the app version, your device model and OS version, and the app's language. Stored linked to your account.</li>
+<li><b>Location</b> (only if you allow it): an approximate position (to about 10 km) for the weather, including when the AI assistant looks up the weather. If you turn on "Show my area to friends", the name of your city or ward (for example, Setagaya). We never store your exact location.</li>
+<li><b>Usage</b>: whether you're online and when you were last connected, how often you use translation and the AI assistant, and your Mote+ subscription status (Apple's transaction number and expiry date).</li>
+<li><b>Device</b>: a per-device key for notifications (stored hashed), and the notification tokens Apple issues (one for ordinary notifications, one for incoming calls).</li>
+<li><b>What you ask the AI assistant</b>: your words, converted to text.</li>
+</ul>
+<p>The voice and video of calls and Living rooms, and the messages sent inside a Living room, are only relayed to the other people and are never stored.</p>
+<p>These stay on your iPhone and are never sent to us: Face ID (we only use the result), the contents of your Calendar and Reminders (read only to show them in widgets), and the motion sensors. Noise reduction for your voice in calls and Living rooms (Krisp) also runs on your iPhone; no audio is sent anywhere for it. From the camera, microphone and photos, we receive only what you choose to send, and your voice and video while you're in a call or speaking in a Living room.</p>
+<p>Chat history, photos and the like are also kept on your iPhone so they show quickly. You can clear what's on your iPhone in Settings › Storage.</p>
+
+<h2>3. Why we use it</h2>
+<ol>
+<li>To run the App (delivering messages, calls, Living rooms, Stories, friends, notifications, translation, the AI assistant, weather and so on)</li>
+<li>To sign you in, confirm it's you, and prevent misuse</li>
+<li>To handle reports and breaches of the Terms of Use</li>
+<li>To check and provide your Mote+ subscription</li>
+<li>To answer questions and feedback, investigate problems, and improve the App</li>
+<li>To tell you about important things, such as changes to our terms</li>
+</ol>
+<p>We don't show ads and don't track you for advertising.</p>
+
+<h2>4. Secrecy of communications</h2>
+<p>We respect the secrecy of communications under Japan's Telecommunications Business Act. We look at the content of messages only to review something that was reported, when the law requires it, or with your consent. We never record or listen to the voice or video of calls and Living rooms.</p>
+
+<h2>5. Sharing with third parties</h2>
+<p>We don't give your personal information to third parties without your consent, except:</p>
+<ul>
+<li>when the law requires it;</li>
+<li>when it's needed to protect someone's life, body or property and it's hard to get your consent;</li>
+<li>in other cases allowed by the Act on the Protection of Personal Information.</li>
+</ul>
+<p>Your profile and posts are shown to the people you choose (friends, group members, people who can see your Stories or Living room, and so on). When you join a Living room, your display name and profile photo are shown to everyone in it, including people who aren't your friends. Only the person who posted a story can see who viewed it or sent a heart. People aren't told when you hide their stories.</p>
+
+<h2>6. Outside services (including transfers to other countries)</h2>
+<p>The App uses the services below. We ask for your consent to share information with US companies when you sign up, or before you keep using the App.</p>
+<div class="svc"><b>Supabase (Supabase, Inc., United States)</b><p>Everything stored on our servers (all of section 2 except what stays on your iPhone). Used to store data, sign you in, deliver in real time, send notifications and send confirmation emails. The data is stored on servers in Tokyo, Japan, and Supabase handles it only as we instruct.</p></div>
+<div class="svc"><b>Anthropic (Anthropic, PBC, United States)</b><p>The text being translated (messages and the like), your requests to the AI assistant and the conversation just before them, the friends' display names a request needs, and the current time and your approximate area name. Used for translation and the AI assistant. If the person you're writing to has auto-translate on, your messages are sent for translation too. Anthropic doesn't use this data to train AI.</p></div>
+<div class="svc"><b>LiveKit (LiveKit, Inc., United States)</b><p>The voice and video of voice calls, video calls and Living rooms, the messages sent inside a Living room, and the user ID, display name and profile photo used to show who's taking part. Relayed through LiveKit Cloud servers to reach the other people in real time. Nothing is recorded, and the voice and video aren't stored. LiveKit may keep connection records (participant IDs, connection times and the like) for a period to run its service.</p></div>
+<div class="svc"><b>Apple (Apple Inc., United States)</b><p>Sign in with Apple, in-app purchases, push notifications (Apple Push Notification service), weather (WeatherKit), looking up area names, and speech input (for languages your iPhone can't recognise on its own). For push notifications, what a notification shows (the sender's display name and profile photo, the group name, the start of the message up to 180 characters, and the kind of item, such as a photo) and incoming calls (the caller's display name, and whether it's voice or video) reach you through Apple. For the weather, an approximate position (to about 10 km) is sent.</p></div>
+<div class="svc"><b>Open-Meteo</b><p>An approximate position (to about 10 km) and place names, to get the weather (for example, when the AI assistant looks it up). Not linked to your account.</p></div>
+<p><b>Personal-information protection in the US</b>: the US has no comprehensive federal law like Japan's; protection comes from state laws such as the California Consumer Privacy Act and federal laws for particular sectors. See the survey of foreign data-protection systems published by Japan's Personal Information Protection Commission.</p>
+<p><b>What these companies do to protect it</b>: they encrypt data in transit and at rest, restrict access, and limit how the data is used. LiveKit only relays the voice and video of calls and Living rooms, encrypted, and doesn't store them.</p>
+
+<h2>7. How long we keep it, and deletion</h2>
+<ul>
+<li>We keep your information while your account exists.</li>
+<li>When you delete your account in Settings, after 7 days we delete your account, profile, photos, friends and block list, your Moments posts, likes and comments, your Stories, and so on. Signing in again within 7 days cancels the deletion.</li>
+<li>Text messages you sent and call records remain in the other person's chat history, but no longer show who sent them. Photos, videos, files and voice messages you sent, and every other file you uploaded (such as your profile photo), are deleted from our servers.</li>
+<li>Photos, videos, files and voice messages sent in chats are deleted from our servers 90 days after they are sent (files and original-quality videos after 30 days). Photos, videos and files the other person didn't open within 30 days are deleted after 30 days. Copies already saved on a phone stay viewable there.</li>
+<li>24 hours after you post a story, nobody but you can see it. It then stays as an archive only you can see, and is deleted, together with its photos or videos and the record of views and hearts, when you delete it or your account.</li>
+<li>The voice and video of calls and Living rooms, and the messages sent inside a Living room, are never stored.</li>
+<li>Feedback stays after you delete your account, but no longer shows who sent it.</li>
+<li>If you signed in with Apple, we also end the link with Apple.</li>
+<li>Information the law requires us to keep may be kept for that period.</li>
+</ul>
+
+<h2>8. How we keep it safe</h2>
+<ul>
+<li>All connections are encrypted (HTTPS; the voice and video of calls and Living rooms are encrypted too).</li>
+<li>The database limits access item by item, so only you and the people you allow (friends, group members and so on) can read your data.</li>
+<li>Passwords are stored in a form that can't be reversed (hashed).</li>
+<li>Administrative keys stay on the server and are never in the App.</li>
+<li>Only the operator can use the admin console.</li>
+<li>Where the data is: on servers in Tokyo, Japan. For our use of US companies, see section 6.</li>
+</ul>
+
+<h2>9. Seeing, correcting or deleting your information</h2>
+<p>You can ask us to disclose, correct, add to or delete your information, to stop using it or sharing it with third parties, and to disclose records of sharing. Contact us; once we've confirmed it's you, we'll act without delay. You can also edit your profile and delete your account in the App's Settings.</p>
+
+<h2>10. Minors</h2>
+<p>If you are a minor, please use the App with your parent's or guardian's consent.</p>
+
+<h2>11. Information sent outside the App</h2>
+<p>Everything the App sends to outside services is listed in section 6. We use no advertising or analytics tools.</p>
+
+<h2>12. Changes to this policy</h2>
+<p>We'll let you know in the App when this policy changes. For important changes, we'll ask for your consent again.</p>
+
+<h2>13. Contact</h2>
+<p><a href="mailto:hakuku_@outlook.com">hakuku_@outlook.com</a><br>You can also reach us from Settings › Send feedback in the App.</p>
+
+<p class="note">The Japanese version of this policy is the official one. Other languages are translations for reference.</p>
+</article>
+
+<!-- ======================= 한국어 ======================= -->
+<article lang="ko" hidden>
+<h1>개인정보 처리방침</h1>
+<p class="date">개정일: 2026년 11월 24일 (제정일: 2026년 11월 19일)</p>
+<p>Mote 운영(이하 '운영자')은 일본의 개인정보 보호에 관한 법률 등 관련 법령에 따라, 채팅 앱 'Mote'(이하 '본 앱') 이용자의 개인정보를 이 방침대로 처리합니다.</p>
+
+<h2>1. 운영자</h2>
+<p>명칭: Mote 운영<br>연락처: <a href="mailto:hakuku_@outlook.com">hakuku_@outlook.com</a><br>운영자의 성명과 주소는 요청하시면 지체 없이 알려 드립니다.</p>
+
+<h2>2. 수집하는 정보</h2>
+<ul>
+<li><b>계정</b>: 이메일 주소와 비밀번호(비밀번호는 되돌릴 수 없는 형태로 저장하며, 운영자도 볼 수 없습니다). Apple로 로그인한 경우 Apple이 제공하는 식별자와, 처음 한 번만 제공되는 이름과 이메일 주소.</li>
+<li><b>프로필과 설정</b>: 표시 이름, ID, 프로필 사진과 커버 사진, 자기소개, 테마 색과 전화를 받을 상대 등의 설정, 저장한 위젯 레이아웃.</li>
+<li><b>보내거나 올리는 내용</b>: 메시지(사진, 동영상, 파일, 음성 메시지 포함), 메시지에 남긴 반응, 나에게서만 삭제한 메시지 기록, 편지, 리마인더, 그룹, 모멘트 게시물·좋아요·댓글, 친구에게 붙인 이름, 친구 그룹, 친구와 차단 관계, 신고 내용.</li>
+<li><b>스토리</b>: 올린 사진·동영상·글과 볼 수 있는 사람 설정. 본 사람과 하트 기록. 스토리를 숨긴 상대.</li>
+<li><b>통화와 거실</b>: 음성 통화·영상 통화 기록(건 사람과 받은 사람, 일시, 음성인지 영상인지, 통화 시간, 응답·부재중·거절 등의 결과). 이 기록은 채팅에도 표시됩니다. 거실(친구와의 음성 룸)을 연 기록(연 사람, 주제, 볼 수 있는 사람 설정, 시작과 종료 시각).</li>
+<li><b>의견</b>: 종류와 내용, 앱 버전, 기기 모델과 OS 버전, 앱 표시 언어. 계정과 연결해 저장합니다.</li>
+<li><b>위치 정보</b>(허용한 경우에만): 날씨 표시와 AI 어시스턴트가 날씨를 조회할 때 쓰는 대략적인 위치(약 10km 단위). '친구에게 지역 표시'를 켠 경우 구나 시 단위의 지역 이름(예: 세타가야구). 정확한 위치는 저장하지 않습니다.</li>
+<li><b>이용 현황</b>: 온라인 상태와 마지막 접속 시각, 번역과 AI 어시스턴트 이용 횟수, Mote+ 구독 상태(Apple 거래 번호와 만료일).</li>
+<li><b>기기 정보</b>: 알림에 쓰는 기기별 키(해시로 저장)와 Apple이 발급하는 알림용 토큰(일반 알림용과 통화 수신용).</li>
+<li><b>AI 어시스턴트에 한 요청</b>: 말한 내용을 글자로 바꾼 것.</li>
+</ul>
+<p>통화와 거실의 음성·영상, 거실 안에서 보내는 메시지는 상대에게 전달하기 위해 중계할 뿐 저장하지 않습니다.</p>
+<p>다음 정보는 기기 안에서만 쓰고 운영자에게 보내지 않습니다: Face ID(인증 결과만 사용), iPhone '캘린더'와 '미리 알림'의 내용(위젯에 표시하기 위해서만 읽음), 모션 센서. 통화와 거실에서의 목소리 소음 제거(Krisp)도 기기 안에서 처리하며, 이를 위해 음성을 다른 곳으로 보내지 않습니다. 카메라, 마이크, 사진은 직접 보내기로 한 것과, 통화 중이나 거실에서 말하는 동안의 음성·영상만 보냅니다.</p>
+<p>채팅 기록과 사진 등은 빠르게 표시하기 위해 기기에도 저장합니다. 기기에 있는 것은 '설정 › 저장 공간'에서 지울 수 있습니다.</p>
+
+<h2>3. 이용 목적</h2>
+<ol>
+<li>본 앱의 제공(메시지 전달, 통화, 거실, 스토리, 친구, 알림, 번역, AI 어시스턴트, 날씨 등)</li>
+<li>로그인, 본인 확인, 부정 이용 방지</li>
+<li>신고 대응과 이용약관 위반 행위에 대한 대응</li>
+<li>Mote+ 구독 확인과 제공</li>
+<li>문의와 의견에 대한 답변, 문제 조사, 본 앱 개선</li>
+<li>약관 변경 등 중요한 안내</li>
+</ol>
+<p>광고를 표시하지 않으며, 광고를 위한 추적도 하지 않습니다.</p>
+
+<h2>4. 통신의 비밀</h2>
+<p>운영자는 일본 전기통신사업법이 정하는 통신의 비밀을 지킵니다. 메시지 내용은 신고된 내용을 확인하는 경우, 법령에 따른 경우, 본인의 동의가 있는 경우에만 확인합니다. 운영자는 통화와 거실의 음성·영상을 녹음·녹화하거나 듣지 않습니다.</p>
+
+<h2>5. 제3자 제공</h2>
+<p>다음의 경우를 제외하고, 동의 없이 개인정보를 제3자에게 제공하지 않습니다.</p>
+<ul>
+<li>법령에 따른 경우</li>
+<li>사람의 생명, 신체 또는 재산을 보호하기 위해 필요하고, 본인의 동의를 얻기 어려운 경우</li>
+<li>그 밖에 개인정보 보호법이 허용하는 경우</li>
+</ul>
+<p>프로필과 게시물은 직접 선택한 상대(친구, 그룹 멤버, 스토리나 거실을 볼 수 있는 사람 등)에게 표시됩니다. 거실에 들어가면 표시 이름과 프로필 사진이 같은 거실에 있는 사람(친구가 아닌 사람 포함)에게 표시됩니다. 스토리를 본 것과 하트는 올린 사람에게만 표시됩니다. 스토리를 숨겨도 상대에게는 알려지지 않습니다.</p>
+
+<h2>6. 외부 서비스(국외 제3자 제공 포함)</h2>
+<p>본 앱은 다음 외부 서비스를 이용합니다. 미국 사업자에게 제공하는 것에 대해서는 가입할 때 또는 계속 이용하기 전에 동의를 받습니다.</p>
+<div class="svc"><b>Supabase(Supabase, Inc., 미국)</b><p>서버에 저장하는 모든 정보(2의 정보 중 기기 안에서만 쓰는 것 제외). 데이터 저장, 로그인, 실시간 전달, 알림 발송, 확인 메일 발송에 씁니다. 데이터는 도쿄(일본)의 서버에 저장되며, Supabase는 운영자가 지시한 범위에서만 처리합니다.</p></div>
+<div class="svc"><b>Anthropic(Anthropic, PBC, 미국)</b><p>번역할 글(메시지 등)의 본문, AI 어시스턴트에 한 요청과 직전의 대화, 요청에 필요한 친구의 표시 이름, 현재 시각과 대략적인 지역 이름. 번역과 AI 어시스턴트에 씁니다. 상대가 자동 번역을 켜 둔 경우, 내가 보낸 메시지도 번역을 위해 전송됩니다. Anthropic은 이 데이터를 AI 학습에 쓰지 않습니다.</p></div>
+<div class="svc"><b>LiveKit(LiveKit, Inc., 미국)</b><p>음성 통화·영상 통화와 거실의 음성·영상, 거실 안에서 보내는 메시지, 참가자를 표시하기 위한 사용자 ID·표시 이름·프로필 사진. 상대에게 실시간으로 전달하기 위해 LiveKit Cloud 서버에서 중계합니다. 녹음·녹화는 하지 않으며, 음성·영상은 저장되지 않습니다. 접속 기록(참가자 ID, 접속 시각 등)은 LiveKit이 서비스 운영을 위해 일정 기간 보관할 수 있습니다.</p></div>
+<div class="svc"><b>Apple(Apple Inc., 미국)</b><p>Apple로 로그인, 앱 내 구입, 푸시 알림(Apple Push Notification service), 날씨(WeatherKit), 지역 이름 조회, 음성 입력(기기에서 인식할 수 없는 언어의 경우). 푸시 알림에서는 알림에 표시되는 내용(보낸 사람의 표시 이름과 프로필 사진, 그룹 이름, 메시지 앞부분(최대 180자), 사진 등의 종류)과 통화 수신(건 사람의 표시 이름, 음성인지 영상인지)이 Apple을 거쳐 전달됩니다. 날씨 조회에는 대략적인 위치(약 10km 단위)를 보냅니다.</p></div>
+<div class="svc"><b>Open-Meteo</b><p>날씨를 조회하기 위한 대략적인 위치(약 10km 단위)와 지명(AI 어시스턴트가 날씨를 조회하는 경우 등). 계정과 연결하지 않고 보냅니다.</p></div>
+<p><b>미국의 개인정보 보호 제도</b>: 미국에는 일본 개인정보 보호법에 해당하는 포괄적인 연방법이 없으며, 캘리포니아 소비자 프라이버시법 등 주법과 분야별 연방법이 있습니다. 자세한 내용은 일본 개인정보보호위원회가 공표한 '외국의 개인정보 보호 제도 조사'를 참고해 주세요.</p>
+<p><b>제공받는 사업자의 조치</b>: 위 사업자들은 전송·저장 데이터 암호화, 접근 제한, 이용 목적 제한 등 개인정보를 보호하기 위한 조치를 취하고 있습니다. LiveKit은 통화와 거실의 음성·영상을 암호화해 중계할 뿐 저장하지 않습니다.</p>
+
+<h2>7. 보존 기간과 삭제</h2>
+<ul>
+<li>정보는 계정이 있는 동안 보존합니다.</li>
+<li>'설정'에서 계정을 삭제하면, 7일 후 계정, 프로필, 프로필 사진, 친구와 차단 관계, 모멘트 게시물·좋아요·댓글, 스토리 등을 삭제합니다. 7일 안에 다시 로그인하면 삭제가 취소됩니다.</li>
+<li>보낸 텍스트 메시지와 통화 기록은 상대의 대화 기록으로 남지만, 누가 보냈는지는 더 이상 표시되지 않습니다. 보낸 사진·동영상·파일·음성과 프로필 사진 등 업로드한 파일은 서버에서 모두 삭제합니다.</li>
+<li>채팅에서 보낸 사진·동영상·파일·음성은 보낸 지 90일(파일과 원본 화질 동영상은 30일)이 지나면 서버에서 삭제합니다. 상대가 30일 안에 열지 않은 사진·동영상·파일은 30일 후 삭제합니다. 휴대폰에 저장된 것은 휴대폰에서 계속 볼 수 있습니다.</li>
+<li>스토리는 올린 지 24시간이 지나면 나 외에는 볼 수 없습니다. 그 후에는 나만 볼 수 있는 보관함에 남으며, 내가 삭제하거나 계정을 삭제할 때 사진·동영상, 본 사람과 하트 기록과 함께 삭제합니다.</li>
+<li>통화와 거실의 음성·영상, 거실 안에서 보내는 메시지는 저장하지 않습니다.</li>
+<li>의견은 계정을 삭제한 후에도 누가 보냈는지 알 수 없는 형태로 남습니다.</li>
+<li>Apple로 로그인한 경우 Apple과의 연결도 해제합니다.</li>
+<li>법령상 보존이 필요한 정보는 그 기간 동안 보존할 수 있습니다.</li>
+</ul>
+
+<h2>8. 안전 관리 조치</h2>
+<ul>
+<li>모든 통신을 암호화합니다(HTTPS. 통화와 거실의 음성·영상도 암호화해 보냅니다).</li>
+<li>데이터베이스는 데이터마다 접근을 제한해, 본인과 본인이 허용한 상대(친구, 그룹 멤버 등)만 읽을 수 있습니다.</li>
+<li>비밀번호는 되돌릴 수 없는 형태(해시)로 저장합니다.</li>
+<li>관리용 키는 서버에만 두고 앱에는 넣지 않습니다.</li>
+<li>관리 화면에는 운영자만 접근할 수 있습니다.</li>
+<li>외부 환경: 데이터는 일본(도쿄)의 서버에 저장합니다. 미국 사업자의 서비스 이용은 6과 같습니다.</li>
+</ul>
+
+<h2>9. 열람·정정·삭제 등의 요청</h2>
+<p>본인의 정보에 대해 열람, 정정, 추가, 삭제, 이용 정지, 제3자 제공 정지, 제3자 제공 기록 열람을 요청할 수 있습니다. 연락처로 연락해 주세요. 본인 확인 후 지체 없이 처리합니다. 프로필 변경과 계정 삭제는 앱의 '설정'에서도 할 수 있습니다.</p>
+
+<h2>10. 미성년자</h2>
+<p>미성년자는 보호자의 동의를 받은 후 이용해 주세요.</p>
+
+<h2>11. 외부로 전송되는 정보</h2>
+<p>본 앱에서 외부로 전송되는 정보는 6과 같습니다. 광고나 접속 분석 도구는 쓰지 않습니다.</p>
+
+<h2>12. 이 방침의 변경</h2>
+<p>내용이 바뀌면 본 앱에서 알려 드립니다. 중요한 변경은 다시 동의를 요청합니다.</p>
+
+<h2>13. 문의</h2>
+<p><a href="mailto:hakuku_@outlook.com">hakuku_@outlook.com</a><br>앱의 '설정 › 의견 보내기'에서도 받습니다.</p>
+
+<p class="note">이 방침은 일본어판을 정본으로 합니다. 다른 언어판은 참고용 번역입니다.</p>
+</article>
+
+</main>
+<script>
+(() => {
+  // ?lang=ja|zh|en|ko picks the language (the app passes its own); otherwise the browser's. ?dark=1|0 follows the app's look.
+  const q = new URLSearchParams(location.search), langs = ['ja', 'zh', 'en', 'ko'];
+  let l = (q.get('lang') || navigator.language || 'ja').slice(0, 2).toLowerCase();
+  if (!langs.includes(l)) l = 'ja';
+  if (q.get('dark') === '1') document.documentElement.classList.add('dark');
+  if (q.get('dark') === '0') document.documentElement.classList.add('light');
+  if (q.get('embed') === '1') document.documentElement.classList.add('embed');   // inside the app: the sheet's colour
+  const arts = [...document.querySelectorAll('article')], btns = [...document.querySelectorAll('#bar button')];
+  const show = k => {
+    arts.forEach(a => { a.hidden = (a.dataset.l || a.lang) !== k; });
+    btns.forEach(b => b.classList.toggle('on', b.dataset.l === k));
+    const a = arts.find(x => !x.hidden); document.documentElement.lang = a.lang;
+    document.title = 'Mote ' + a.querySelector('h1').textContent;
+    document.querySelectorAll('a[data-doc]').forEach(x => { x.href = x.dataset.doc + '.html?lang=' + k + (q.get('dark') ? '&dark=' + q.get('dark') : '') + (q.get('embed') ? '&embed=1' : ''); });
+  };
+  btns.forEach(b => b.addEventListener('click', () => { show(b.dataset.l); scrollTo(0, 0); }));
+  show(l);
+})();
+</script>
+</body>
+</html>
